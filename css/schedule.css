@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: "Euclid Circular A", sans-serif;
+}
+h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 61px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 100px;
+}
+.nav a{
+    color: #000000;
+    text-shadow: none;
+}
+.nav a:hover{
+    color: #FBAC1E;
+}
+.nav a:active{
+    color: #E79814;
+}
+
+.header_icon_telephone{
+    background-color: #41AF1E;
+    color: #ffffff;
+}
+.header_icon_vk{
+    background-color: #0077FF;
+}
+.header_icon_telegram{
+    background-color: #419FD9;
+}
+.header_icon_vk:hover, .header_icon_telegram:hover{
+    background-color: #132C33;
+}
+.header_icon_vk:active, .header_icon_telegram:active{
+    background-color: #E79814;
+}
+.modal_telephone{
+    background-color: #ffca3c;
+}
+
+
+.region{
+    padding-top: 70px;
+}
+.region_items{
+    display: flex;
+    align-items: center;
+}
+.region_list{
+    max-width: 203px;
+    margin-right: 35px;
+}
+.region_list_title{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 15px;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+    padding: 12px 11px 12px 16px;
+    border-radius: 30px;
+
+    border: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.btn.active{
+    background-color: #FFCA3C;
+}
+.product_card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.сrimea_desc{
+    display: flex;
+    margin-left: 125px;
+    gap: 40px;
+    margin-bottom: 110px;
+    margin-top: -110px;
+}
+.сrimea_desc_list{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color:#000000;
+    cursor: pointer;
+}
+.сrimea_desc_list_point{
+    width: 8px;
+    height: 8px;
+    border: 5px solid #E79814;
+    border-radius: 50%;
+    align-self: center;
+}
+.product_card{
+    margin-left: 160px;
+}
+.crimea_card{
+    display: flex;
+    width: 100%;
+    max-width: 520px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+.crimea_card_img{
+    padding: 12px 30px 12px 12px;
+    border-radius: 8px;
+}
+.crimea_card_desc_data, .crimea_card_desc_subtitle, .crimea_card_desc_price{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #000000;
+}
+.crimea_card_desc_data{
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+.crimea_card_desc_subtitle{
+    margin-top: 12px;
+    margin-bottom: 18px;
+}
+.crimea_card_desc_title{
+    width: 100%;
+    max-width: 260px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.crimea_card_desc_btn{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding: 10px;
+    background-color: #FBAC1E;
+    border: none;
+    margin-left: 170px;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.crimea_product_card_tours.active{
+    display: flex;
+    flex-wrap: wrap;
+}
+.crimea_product_card_tours{
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.product_card.active{
+    display: flex;
+}
+.product_card{
+    display: none;
+}
+.region_footer{
+    margin-top: 98px;
+    width: 100%;
+    max-width: 961px;
+}
+.region_footer>p{
+    margin-left: 35px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000;
+}
+.region_footer span{
+    font-weight: 700;
+}
+.region_footer_btn{
+    margin-left: 35px;
+    margin-bottom: 112px;
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: none;
+    padding: 9px 14px;
+    background-color: #FBAC1E;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.schedule_modal_close{
+    display: none;
+}
+.schedule_modal_open{
+    display: block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.img_vector{
+    position: absolute;
+    right: 139px;
+    top: 102px;
+    cursor: pointer;
+}
+.schedule_modal_title{
+    font-size: 74px;
+    line-height: 94px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.schedule_modal_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.schedule_modal_box_desc{
+    width: 100%;
+    max-width: 550px;
+}
+.schedule_modal_box_top_footer{
+    display: flex;
+}
+.schedule_modal_box_top{
+    margin-right: 22px;
+}
+.schedule_modal_box_top>p{
+    margin-bottom: 25px;
+}
+.schedule_modal_box_top span{
+    background-color: #FFF7D3;
+    padding: 12px 12px 9px 0px;
+    color: #966808;
+    border-radius: 5px;
+}
+.schedule_modal_box_footer>p{
+    margin-bottom: 25px;
+}
+.schedule_modal_box_string{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.schedule_modal_box_string img{
+    margin: 0 14px;
+}
+.schedule_modal_box_text{
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+.schedule_modal_box_btn{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #FBAC1E;
+    border:  none;
+    padding: 11px 14px;
+    border-radius: 7px;
+    margin-bottom: 194px;
+}
+.schedule_modal_box_gallary{
+    width: 100%;
+    max-width: 560px;
+}
+.schedule_modal_box_img{
+    width: 100%;
+}

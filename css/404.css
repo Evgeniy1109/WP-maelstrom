@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    font-family: 'Euclid Circular A', sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: 48px;
+    line-height: 61px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 100px;
+}
+
+.nav a{
+    color: #000000;
+    text-shadow: none;
+}
+.nav a:hover{
+    color: #FBAC1E;
+}
+.nav a:active{
+    color: #E79814;
+}
+.header_icon_telephone{
+    background-color: #41AF1E;
+    color: #ffffff;
+}
+.header_icon_vk{
+    background-color: #0077FF;
+}
+.header_icon_telegram{
+    background-color: #419FD9;
+}
+.header_icon_vk:hover, .header_icon_telegram:hover{
+    background-color: #132C33;
+}
+.header_icon_vk:active, .header_icon_telegram:active{
+    background-color: #E79814;
+}
+
+/* 404  */
+.mistake_block{
+    width: 100%;
+    display: flex;
+    padding: 40px 0;
+}
+.mistake_block_img{
+    width: 50%;
+    max-width: 645px;
+}
+.mistake_block_img img{
+    width: 100%;
+}
+.mistake_block_content{
+    width: 50%;
+    max-width: 645px;
+    margin-left: 117px;
+}
+.mistake_block_content_title{
+    font-size: 200px;
+    line-height: 253px;
+    font-weight: 700;
+    color: #FBAC1E;
+    margin-bottom: 10px;
+}
+.mistake_block_content_subtitle{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+}
+.mistake_block_content_subtitle a{
+    text-decoration: none;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+}
+
+.mistake_block_icon{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+}
+.mistake_block_icon_map{
+    text-align: center;
+}
+.mistake_block_icon_map img{
+    margin-bottom: 20px;
+}
+/* -----------------------  */
+
+/* footer   */
+.footer_svg{
+    width: 100%;
+    height: 20px;
+    background-image: url('img/фон\ 6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  .footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(19, 44, 51);
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  .footer_div {
+  width: 320px;
+  padding: 44px 32px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  }
+
+  .footer_div_menu {
+  width: 320px;
+  padding: 44px 32px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  }
+
+  .footer_div_fone {
+  display: flex;
+  align-items: center;
+  }
+
+  .footer_a {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }
+
+  .footer_a:hover {
+  text-decoration: none;
+  }
+.footer_a:active {
+  text-decoration: none;
+}
+
+  .footer_p {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }
+
+  .footer_h3 {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 202, 60);
+  }
+
+  .footer_h4 {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 202, 60);
+  text-decoration: none;
+  }
+
+  .footer_h4:hover {
+  color: #FFFFFF;
+  }
+
+  .footer_a_fone {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }
+
+  .img_logo {
+  height: 106px;
+  width: 128px;
+  border-radius: 0px;
+  }
+
+  .img_decor {
+  height: 106px;
+  width: 273px;
+  border-radius: 0px;
+  }
+
+  .footer_h3_Cont {
+  margin: 0;
+  padding: 0;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 202, 60);
+  }
+
+  .footer_button_z:hover {
+  background-color: #81accf;
+  color: #0acf3b;
+  }
+
+  .footer_div_socseti {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  }
+  .footer_div_socseti_VK {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: white;
+  }
+  .footer_div_socseti_VK:hover {
+  background-color:#FFCA3C;
+  }
+
+  .footer_div_socseti_VK:active {
+  background-color: #E79814;
+
+  }
+
+  .footer_div_socseti_Telegram {
+  margin-left: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: white;
+  }
+  .footer_div_socseti_Telegram:hover {
+  background-color: #FFCA3C;
+  }
+
+  .footer_div_socseti_Telegram:active {
+  background-color: #E79814;
+
+  }
+
+  .footer_div_zayvka {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+  .footer_button_z {
+  /* Button */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 144px;
+  height: 48px;
+  /* Main color/accent */
+  background: #FBAC1E;
+  border-radius: 7px;
+  /* Inside auto layout */
+  /* flex: none;
+  flex-grow: 0; */
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to&nbsp;box height */
+  text-align: center;
+  text-decoration: none;
+  /* text/white */
+  color: #FFFFFF;
+  image-rendering: auto;
+  image-orientation: from-image;
+  }
+  .footer_button_z:hover {
+  background-color: #FFCA3C;
+  color: #132C33;
+  }
+  .footer_button_z:active {
+  background-color: #E79814;
+  color: #132C33;
+  }
+    /* ------------------------------  */
+
+
+
+@media (max-width: 1300px){
+    .about_sidebar{
+        display: none;
+    }
+    .about_text{
+        margin: 0;
+    }
+    .guides_block{
+        display: block;
+        margin: 0;
+    }
+    .guides{
+        background-image: none;
+        display: block;
+        margin: 0;
+        height: auto;
+    }
+    .guides_svg_1, .guides_svg_2, .guides_fon, .guides_svg_5{
+        display: none;
+    }
+    .guides_instructor_name, .guides_instructor_desc{
+        color: #000000;
+    }
+    .guides_instructor_name{
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    .guides_instructor_fon{
+        display: block;
+        width: 100%;
+        max-width: 462px;
+        margin-top: -8px;
+    }
+    .guides_instructor_img, .guides_instructor_name, .guides_instructor_desc{
+        width: 100%;
+        max-width: 462px;
+    }
+    .guides_block_top, .guides_block_bottom{
+        justify-content: center;
+    }
+    .guides_block_top{
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .guides_instructor{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .guides_title{
+        padding-bottom: 44px;
+    }
+    .merits_title{
+        padding-top: 170px;
+    }
+    .merits_aside_top, .merits_aside_bottom{
+        display: block;
+        margin-bottom: 0;
+    }
+    .merits_aside_bottom{
+        padding-bottom: 60px;
+    }
+    .merits_aside_wrap{
+        width: 100%;
+        margin: 0 auto 30px;
+    }
+    .merits_aside_wrap_text{
+        text-align: center;
+        padding-bottom: 16px;
+    }
+    .merits_aside_wrap_text_black{
+        text-align: center;
+        padding-bottom: 16px;
+    }
+}
+
+@media (max-width: 1100px){
+    .burger span,
+    .burger span:before,
+    .burger span:after{
+        background-color: #FBAC1E;
+    }
+}
+
+@media (max-width: 850px){
+    .merits_title{
+        padding-top: 99px;
+        padding-bottom: 43px;
+    }
+}
+@media (max-width: 550px){
+    .about_text_desc, .about_text_desc_p{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .guides_instructor_name{
+        font-size: 20px;
+    }
+    .guides_instructor_desc{
+        font-size: 16px;
+        line-height: 16px;
+        padding: 0;
+    }
+    .guides_instructor_name{
+        margin-bottom: 8px;
+    }
+    .guides_title{
+        padding-top: 33px;
+        padding-bottom: 49px;
+    }
+    .merits_title{
+        padding-top: 80px;
+        padding-bottom: 43px;
+    }
+    .container{
+        padding: 0 15px;
+    }
+    .merits_aside_wrap_text, .merits_aside_wrap_text_black{
+        font-size: 16px;
+        line-height: 18px;
+    }
+}

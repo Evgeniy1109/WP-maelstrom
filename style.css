@@ -1,0 +1,1598 @@
+/*
+Template Name: МАЛЬСТРИМ
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body {
+    font-family: "Euclid Circular A", sans-serif;
+}
+h2 {
+    text-align: center;
+    font-size: 48px;
+    line-height: 61px;
+    font-weight: 700;
+    color: #000000;
+    padding-top: 100px;
+}
+
+/* Header */
+
+.header_schedule,
+.header_reminder,
+.header_about {
+    padding-top: 25px;
+}
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url("img/Фон.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 25px;
+    padding-bottom: 200px;
+}
+svg{
+    position: absolute;
+    bottom: 0;
+}
+.header_block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav {
+    margin: 0 auto;
+    /* margin-left: 212px;
+    margin-right: 83px; */
+}
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0px 0px 15px rgba(19, 44, 51, 0.65);
+}
+.nav a:hover {
+    color: #132c33;
+    text-shadow: none;
+}
+.nav a:active {
+    color: #081417;
+    text-shadow: none;
+}
+.nav li {
+    list-style: none;
+}
+.menu > img {
+    padding-top: 40px;
+    padding-bottom: 54px;
+    cursor: pointer;
+}
+.menu {
+    text-align: end;
+    width: 80%;
+    height: auto;
+    background-color: rgba(19, 44, 51, 1);
+    opacity: 1;
+    padding-top: 50px;
+    padding-right: 30px;
+    position: fixed;
+    right: -3000px;
+    transition: 1s;
+    z-index: 5;
+}
+.menu li {
+    text-align: end;
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.menu_btn {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 1px solid #fbac1e;
+    background-color: #fbac1e;
+    padding: 11px 30px 11px 30px;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-bottom: 91px;
+}
+.menu_btn:hover {
+    background-color: #ffca3c;
+}
+.menu_btn:active {
+    background-color: #e79814;
+}
+.menu_link > a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+}
+.menu.animate {
+    top: 0px;
+    right: 0;
+}
+.menu_tel {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.menu_tel > img {
+    margin-right: 15px;
+    color: #ffffff;
+}
+.menu_tel > p {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #ffffff;
+}
+.menu_icon_vk{
+    padding: 9px 5px;
+    margin-left: 17px;
+    margin-bottom: 85px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+.menu_icon_tl{
+    padding: 8px 6px;
+    margin-left: 17px;
+    margin-bottom: 85px;
+    background-color: #ffffff;
+    border-radius: 7px;
+}
+.header_icon {
+    display: flex;
+    gap: 15px;
+}
+.header_icon_telephone{
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    height: 32px;
+    cursor: pointer;
+}
+.header_icon_telegram{
+    padding: 8px 6px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    height: 32px;
+}
+.header_icon_vk {
+    padding: 9px 5px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    height: 32px;
+}
+.header_icon_telegram:hover,
+.header_icon_vk:hover, .header_icon_telephone:hover {
+    background-color: #ffca3c;
+}
+.header_icon_telephone:active,
+.header_icon_telegram:active,
+.header_icon_vk:active {
+    background-color: #e79814;
+}
+.header_link > a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 12px 15px;
+    border: 1px solid #fbac1e;
+    background-color: #fbac1e;
+    border-radius: 4px;
+    margin-left: 21px;
+}
+.header_link > a:hover {
+    background-color: #ffca3c;
+    border: 1px solid #ffca3c;
+}
+.header_link > a:active {
+    background-color: #e79814;
+    border: 1px solid #e79814;
+}
+.header_info_box {
+    width: 100%;
+    display: flex;
+}
+.header_box_title h1 {
+    text-align: center;
+    font-size: 62px;
+    line-height: 78px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.header_box {
+    /* display: flex; */
+    width: 45%;
+    padding-top: 220px;
+    padding-bottom: 45px;
+}
+.header_block_description {
+    display: flex;
+    justify-content: center;
+}
+.header_block_img {
+    width: 174px;
+    gap: 15px;
+    text-align: center;
+}
+.header_block_description p {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+}
+.header_box_link a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 4px solid #fbac1e;
+    border-radius: 7px;
+    padding: 10px 14px;
+}
+.header_box_link a:hover {
+    border: 4px solid #ffca3c;
+}
+.header_box_link a:active {
+    border: 4px solid #e79814;
+}
+.header_box_link {
+    display: flex;
+    align-items: center;
+    padding-top: 51px;
+    justify-content: center;
+}
+/* Модальное окно с телефонами */
+.modal_telephone_close{
+    display: none;
+}
+.modal_telephone_wrap{
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+}
+.modal_telephone{
+    position: fixed;
+    width: 100%;
+    max-width: 229px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 27px;
+}
+.modal_telephone_1{
+    display: flex;
+    margin-bottom: 23px;
+}
+.modal_telephone_1:last-child{
+    margin-bottom: 0;
+}
+.modal_telephone_1 img{
+    margin-right: 13px;
+}
+.modal_telephone_1 p{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #000000;
+}
+/* -----------------------------  */
+
+/* Модальное  */
+.modal_close{
+    display: none;
+}
+.modal_form_active::before{
+    content: "";
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+    z-index: 5;
+}
+.modal_window{
+    position: relative;
+    text-align: end;
+    z-index: 6;
+}
+.modal_img_1{
+    position: absolute;
+    width: 100%;
+}
+.modal_window_img{
+    cursor: pointer;
+}
+.modal_img_2{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.modal_form_p{
+    position: absolute;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+    top: 21px;
+    right: 56px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #ffffff;
+    width: 424px;
+}
+.modal_form{
+    position: absolute;
+    max-width: 510px;
+    padding: 0px 0px 30px 35px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    text-align: start;
+    margin-top: 65px;
+}
+.modal_form_text{
+    padding: 30px 65px 25px 0px;
+    font-size: 18px;
+}
+
+.modal_form_application {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 300;
+    color: #000000;
+    padding-bottom: 25px;
+}
+.modal_application {
+    display: flex;
+    align-items: end;
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #000000;
+    padding-top: 15px;
+    padding-left: 13px;
+}
+.modal_application img{
+    height: 36px;
+    margin-right: 20px;
+}
+.modal_application_label p{
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.modal_application_label{
+    width: 100%;
+    max-width: 340px;
+}
+.modal_application_input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: none;
+    width: 100%;
+    max-width: 340px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 300;
+    outline: none;
+    padding: 8px 0 8px 12px;
+}
+::-webkit-input-placeholder {color:#D2D2D2;}
+::-moz-placeholder          {color:#D2D2D2;}
+:-moz-placeholder           {color:#D2D2D2;}
+:-ms-input-placeholder      {color:#D2D2D2;}
+
+.modal_application_checkbox{
+    display: flex;
+    margin-top: 26px;
+}
+.modal_application_input_checkbox{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.modal_application_checkbox>p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    color: rgba(170, 170, 170, 1);
+}
+.modal_application_checkbox>p>span{
+    color: rgba(251, 172, 30, 1);
+}
+.modal_form_btn {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 11px 42px 11px 42px;
+    border: none;
+    background-color: #fbac1e;
+    border-radius: 7px;
+    display: block;
+    margin: 30px auto 0;
+}
+.modal_form_btn:hover{
+    background-color: #FFCA3C;
+}
+.modal_form_btn:active{
+    background-color: #E79814;
+}
+
+
+/* Наши походы */
+.swiper-slide img{
+    display: none;
+}
+.hiking_slider p{
+    display: none;
+}
+.hiking_advantages {
+    background-image: url(img/sect-benefits.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hiking_block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+.hiking_img {
+    text-align: center;
+}
+.hiking_img>p{
+    width: 100%;
+    max-width: 252px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.hiking_img:last-child {
+    padding-right: 0;
+    border: 0;
+}
+.hiking_point {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E79814;
+    background-color: #E79814;
+    border-radius: 50%;
+    align-items: center;
+    margin-bottom: 105px;
+}
+.hiking_img > img {
+    padding-bottom: 20px;
+}
+/* ----------  */
+
+/* Наши преимущества */
+
+.advantages_block {
+    display: flex;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 128px;
+    gap: 48px;
+}
+.advantages_img {
+    max-width: 170px;
+    text-align: center;
+}
+.advantages_img_none{
+    max-width: 170px;
+    text-align: center;
+}
+.advantages_img img, .advantages_img_none img{
+    margin-bottom: 20px;
+}
+.advantages_img p, .advantages_img_none p{
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #132C33;
+}
+
+
+/* Крым */
+
+
+ /* Индивидуальные туры  */
+ .Individual_tours {
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Individual_tours_img_top {
+    display: flex;
+    margin-bottom: 17px;
+}
+.Individual_tours_img_top img {
+    margin-right: 20px;
+}
+.Individual_tours_img_top img:last-child {
+    margin: 0;
+}
+.Individual_tours_content {
+    margin-left: 30px;
+}
+.Individual_tours_title {
+    font-size: 46px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #132c33;
+    margin-bottom: 20px;
+}
+.Individual_tours_desc {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 300;
+    color: #132c33;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+.Individual_tours_text_img {
+    text-align: center;
+    margin-bottom: 22px;
+}
+.Individual_tours_text_img> img{
+    width: 100%;
+    max-width: 365px;
+}
+.Individual_tours_text_bottom {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 21px;
+    line-height: 33px;
+    font-weight: 300;
+    color: #132c33;
+    margin-bottom: 20px;
+}
+.Individual_tours_contacts {
+    display: flex;
+    align-items: center;
+}
+.Individual_tours_icon {
+    padding: 0 20px 0 20px;
+    background-color: #132c33;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+.Individual_tours_icon_vk {
+    padding: 9px 5px 9px 5px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+}
+.Individual_tours_icon_tl {
+    padding: 8px 6px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    margin: 20px 20px 20px 0;
+}
+.Individual_tours_icon_vk:hover,
+.Individual_tours_icon_tl:hover {
+    background-color: #ffca3c;
+}
+.Individual_tours_icon_vk:active,
+.Individual_tours_icon_tl:active {
+    background-color: #e79814;
+}
+.Individual_tours_icon_button {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 11px 30px 11px 30px;
+    border-radius: 7px;
+    background-color: #fbac1e;
+    border: none;
+    margin: 12px 0 12px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+.Individual_tours_icon_button:hover {
+    background-color: #ffca3c;
+}
+.Individual_tours_icon_button:active {
+    background-color: #e79814;
+}
+.Individual_tours_phones {
+    margin-left: 30px;
+}
+.Individual_tours_phones_1 {
+    display: flex;
+    margin-bottom: 15px;
+}
+.Individual_tours_phones_1 img{
+    width: 18px;
+    height: 18px;
+}
+.Individual_tours_phones_1:last-child {
+    margin: 0;
+}
+.Individual_tours_phones_1 p {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #000000;
+    margin-left: 13px;
+}
+
+
+ /* Кавказ   */
+ .caucasus_fon_top{
+    position: relative;
+    width: 100%;
+    height: 39px;
+    background-image: url('img/кавказ\ фон\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: -40px;
+}
+.caucasus_fon_center{
+    background-color: #132C33;
+}
+.caucasus_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 67px;
+}
+.nav_caucasus ul{
+    display: flex;
+    align-items: center;
+    padding-top: 55px;
+}
+.nav_caucasus li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 34px;
+}
+.tab_header.active{
+    color: #FFCA3C;
+}
+.tab_header.active::before{
+    content: '';
+    display: block;
+    border-top: 3px solid #ffffff;
+    padding-top: 7px;
+}
+.tab_header.active::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid #ffffff;
+    padding-bottom: 7px;
+}
+.caucasus_header_title{
+    font-size: 74px;
+    line-height: 94px;
+    font-weight: 700;
+    color: #ffffff;
+    padding-top: 10px;
+}
+.caucasus_desc{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 52px;
+}
+.caucasus_subtitle{
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    width: 70%;
+    max-width: 849px;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 300;
+    color: #ffffff;
+    /* margin-right: 141px; */
+}
+.caucasus_subtitle_img img{
+    width: 100%;
+    max-width: 293px;
+}
+.caucasus_subtitle li{
+    margin-left: 20px;
+}
+.caucasus_img{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+.caucasus_img_elbrus{
+    width: 32%;
+    max-width: 410px;
+}
+.caucasus_button{
+    display: flex;
+    justify-content: end;
+    padding-bottom: 50px;
+}
+.caucasus_btn_routes a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    border: 4px solid #fbac1e;
+    border-radius: 7px;
+    padding: 11px 14px;
+}
+.caucasus_btn_routes a:hover {
+    border: 4px solid #ffca3c;
+}
+.caucasus_btn_routes a:active {
+    border: 4px solid #e79814;
+}
+.caucasus_btn_record > a {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 11px 14px;
+    border: 1px solid #fbac1e;
+    background-color: #fbac1e;
+    border-radius: 4px;
+    margin-left: 21px;
+}
+.caucasus_btn_record > a:hover {
+    background-color: #ffca3c;
+    border: 1px solid #ffca3c;
+}
+.caucasus_btn_record > a:active {
+    background-color: #e79814;
+    border: 1px solid #e79814;
+}
+.caucasus_fon_bottom{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    background-image: url('img/кавказ\ фон\ 2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.caucasus{
+    display: none;
+}
+.caucasus.active{
+    display: block;
+}
+
+
+ /* Наши лучшие фотографии  */
+ .photo_title {
+    text-align: center;
+    font-size: 46px;
+    line-height: 58px;
+    font-weight: 700;
+    color: #132c33;
+    margin-bottom: 43px;
+    padding-top: 50px;
+}
+.photo_img_block {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.photo_img {
+    position: relative;
+}
+.photo_img_wrap {
+    width: 100%;
+    height: auto;
+    max-width: 630px;
+}
+.photo_img_inner {
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+    width: 60%;
+    height: auto;
+    max-width: 300px;
+}
+.swiper-slide_img {
+    display: none;
+}
+.photo_subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-bottom: 113px;
+}
+.photo_subtitle a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+}
+.photo_subtitle span {
+    color: rgba(0, 99, 177, 1);
+}
+.photo_subtitle img {
+    margin-left: 15px;
+}
+.photo_subtitle_link {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+    display: none;
+}
+.photo_subtitle_link_vk {
+    background-color: #0077ff;
+    padding: 9px 5px 9px 5px;
+    border: none;
+    border-radius: 10px;
+}
+.photo_subtitle_link_vk:hover {
+    background-color: #132c33;
+}
+.photo_subtitle_link_vk:active {
+    background-color: #e79814;
+}
+
+
+ /* Отзывы   */
+ .reviews {
+  max-height: 1100px;
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #132c33;
+  border-bottom-color: #132c33;
+}
+.container {
+  display: flexbox;
+  margin: auto;
+  box-sizing: content-box;
+}
+#slides {
+  position: relative;
+  height: 250px;
+  padding: 0px;
+  margin: auto;
+  list-style-type: none;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+.controls {
+  background: #fff;
+  color: #132c33;
+  border: none;
+  padding: 10px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin: 10px 0px 0px 10px;
+  width: 70px;
+}
+.review {
+  display: flex;
+  flex-direction: row;
+  max-width: 1080px;
+  margin: auto;
+}
+.avatar {
+  width: 80px;
+  padding: 10px;
+}
+.text-review-span {
+  display: block;
+  font-family: "Euclid Circular A", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+  color: #2A5885;
+  margin-bottom: 5px;
+}
+.text-review {
+  font-family: "Euclid Circular A", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: start;
+  margin-left: 16px;
+}
+
+.controls:hover,
+.controls:focus {
+  background: #fff;
+  color: #132c33;
+}
+
+.buttons {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+  font-size: 10px;
+}
+
+.text {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
+  padding-right: 10px;
+  color: #132c33;
+}
+
+.mobil {
+  font-size: medium;
+  justify-content: center;
+  display: none;
+}
+
+.logo {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.photo_subtitle_new{
+    margin-bottom: 73px;
+    font-family: "Euclid Circular A", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+
+ /* footer   */
+ .footer_svg{
+    width: 100%;
+    height: 20px;
+    background-image: url('img/фон\ 6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  .footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(19, 44, 51);
+  flex-direction: row;
+  flex-wrap: wrap;
+  }
+
+  .footer_div {
+  width: 320px;
+  padding: 44px 32px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  }
+
+  .footer_div_menu {
+  width: 320px;
+  padding: 44px 32px;
+  box-sizing: border-box;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  }
+
+  .footer_div_fone {
+  display: flex;
+  align-items: center;
+  }
+
+  .footer_a {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }
+
+  .footer_a:hover {
+  text-decoration: none;
+  }
+.footer_a:active {
+  text-decoration: none;
+}
+
+  .footer_p {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  }
+
+  .footer_h3 {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 202, 60);
+  }
+
+  .footer_h4 {
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 202, 60);
+  text-decoration: none;
+  }
+
+  .footer_h4:hover {
+  color: #FFFFFF;
+  }
+
+  .footer_a_fone {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 13px;
+  }
+
+  .img_logo {
+  height: 106px;
+  width: 128px;
+  border-radius: 0px;
+  }
+
+  .img_decor {
+  height: 106px;
+  width: 273px;
+  border-radius: 0px;
+  }
+
+  .footer_h3_Cont {
+  margin: 0;
+  padding: 0;
+  font-family: Euclid Circular A;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgb(255, 202, 60);
+  }
+
+  .footer_button_z:hover {
+  background-color: #81accf;
+  color: #0acf3b;
+  }
+
+  .footer_div_socseti {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  }
+  .footer_div_socseti_VK {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: white;
+  }
+  .footer_div_socseti_VK:hover {
+  background-color:#FFCA3C;
+  }
+
+  .footer_div_socseti_VK:active {
+  background-color: #E79814;
+
+  }
+
+  .footer_div_socseti_Telegram {
+  margin-left: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: white;
+  }
+  .footer_div_socseti_Telegram:hover {
+  background-color: #FFCA3C;
+  }
+
+  .footer_div_socseti_Telegram:active {
+  background-color: #E79814;
+
+  }
+
+  .footer_div_zayvka {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  }
+  .footer_button_z {
+  /* Button */
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 144px;
+  height: 48px;
+  /* Main color/accent */
+  background: #FBAC1E;
+  border-radius: 7px;
+  /* Inside auto layout */
+  /* flex: none;
+  flex-grow: 0; */
+  font-family: 'Euclid Circular A';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  /* identical to&nbsp;box height */
+  text-align: center;
+  text-decoration: none;
+  /* text/white */
+  color: #FFFFFF;
+  image-rendering: auto;
+  image-orientation: from-image;
+  }
+  .footer_button_z:hover {
+  background-color: #FFCA3C;
+  color: #132C33;
+  }
+  .footer_button_z:active {
+  background-color: #E79814;
+  color: #132C33;
+  }
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+
+    .header_block{
+        justify-content: space-between;
+    }
+    .nav{
+        margin: 0;
+    }
+    .hiking_block {
+        justify-content: center;
+    }
+    .header_block_description{
+        justify-content: center;
+        padding-top: 51px;
+        padding-bottom: 56px;
+    }
+    .header_box{
+        width: 60%;
+        display: block;
+        padding-top: 96px;
+    }
+    .header_box_link{
+        justify-content: center;
+    }
+    .advantages_block{
+        flex-wrap: wrap;
+    }
+    .hiking_block{
+        width: 80%;
+        margin: 0 auto;
+        gap: 30px;
+    }
+    .hiking_point{
+        display: none;
+    }
+    .modal_img_1 img{
+        width: 850px;
+        height: 560px;
+    }
+    .modal_form{
+        margin-top: 90px;
+    }
+    .Individual_tours {
+        display: block;
+        max-width: 657px;
+        margin: 0 auto;
+    }
+    .Individual_tours_img_block {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .Individual_tours_content {
+        margin: 0;
+    }
+    .Individual_tours_img_bottom {
+        justify-content: center;
+    }
+    .photo_img_block {
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 20px;
+    }
+    .caucasus_subtitle{
+        width: 100%;
+    }
+}
+@media (max-width: 1100px){
+    .header_icon {
+        display: none;
+    }
+    .nav,
+    .header_link {
+        display: none;
+    }
+    .header_burger{
+        display: flex;
+        justify-content: end;
+    }
+    .menu{
+        width: 50%;
+    }
+    .burger {
+        top: 72px;
+        right: 20px;
+        position: relative;
+        width: 35px;
+        height: 35px;
+    }
+    .burger span,
+    .burger span:before,
+    .burger span:after {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: #ffffff;
+        transition: 0.5s;
+    }
+    .burger span:before {
+        content: "";
+        top: -10px;
+    }
+    .burger span {
+        top: 15px;
+        right: 1px;
+    }
+    .burger span:after {
+        content: "";
+        bottom: -10px;
+    }
+
+}
+@media (max-width: 1000px) {
+    .nav_caucasus ul{
+        display: block;
+    }
+    .nav_caucasus li{
+        line-height: 52px;
+    }
+
+ }
+@media (max-width: 855px) {
+    .header_box {
+        width: 100%;
+        display: block;
+    }
+    .header_block_description {
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .header_block_description p {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+    .header_box_link {
+        margin: 0;
+        justify-content: center;
+    }
+    .hiking_point {
+        display: none;
+    }
+    .hiking_block {
+        gap: 15px;
+        padding-bottom: 0;
+    }
+
+    .hiking_img p {
+        padding-bottom: 15px;
+    }
+    .header_box {
+        padding-top: 50px;
+    }
+
+    .modal_img_1 img, .modal_form_p{
+        display: none;
+    }
+    .modal_form{
+        position: sticky;
+        margin: 0 auto;
+    }
+    .modal_img_2{
+        position: static;
+        text-align: end;
+        margin-right: 150px;
+        margin-bottom: 14px;
+    }
+    .photo_subtitle a {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .photo_img_inner {
+        right: -7px;
+    }
+
+    /* .burger span.active:before {
+        content: "";
+        top: 0px;
+        transform: rotate(45deg);
+    }
+    .burger span.active:after {
+        content: "";
+        bottom: 0;
+        transform: rotate(-45deg);
+    } */
+    /* .burger span.active {
+        background: rgba(255, 255, 255, 0);
+    } */
+}
+@media (max-width: 695px){
+    .hiking_block{
+        display: none;
+    }
+    .swiper {
+      width: 80%;
+      height: 80%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: rgb(255 255 255 / 0%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hiking_slider img {
+      display: block;
+      width: 80%;
+      object-fit: cover;
+      gap: 50px;
+      padding-top: 33px;
+      padding-bottom: 10px;
+    }
+    .hiking_slider p{
+        /* display: block; */
+        display: flex;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 600;
+        color: #132C33;
+    }
+    .advantages_img_none{
+        display: none;
+    }
+    .advantages_block{
+        gap: 13px;
+    }
+    .advantages_img {
+        max-width: 140px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .Individual_tours_img_block {
+        display: none;
+    }
+    .Individual_tours_title {
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 600;
+    }
+    .Individual_tours_contacts {
+        display: block;
+    }
+    .Individual_tours_icon {
+        margin-bottom: 15px;
+        width: 282px;
+    }
+    .Individual_tours_phones {
+        margin: 0;
+    }
+    .photo_img_block {
+        margin-bottom: 5px;
+    }
+    .photo_img {
+        display: none;
+    }
+    .photo_img_gallery_clide img {
+        display: block;
+    }
+    .photo_img_wrap_gallery {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+    }
+    .photo_img_inner_gallery {
+        position: absolute;
+        bottom: 20px;
+        right: 30px;
+        width: 60%;
+        height: auto;
+        max-width: 300px;
+    }
+    .photo_subtitle {
+        margin-top: 50px;
+    }
+    .caucasus_subtitle_img{
+        display: none;
+    }
+    .caucasus_subtitle{
+        margin: 0;
+    }
+    .caucasus_header_title{
+        display: none;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .photo_img_inner_gallery {
+        right: 25px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .photo_subtitle {
+        font-size: 18px;
+    }
+    .photo_subtitle a {
+        width: 100%;
+    }
+    .photo_subtitle_link {
+        display: block;
+    }
+    .photo_img_inner_gallery {
+        right: 21px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .photo_img_inner_gallery {
+        right: 17px;
+    }
+}
+
+@media (max-width: 380px) {
+    .menu{
+        width: 80%;
+    }
+    h2 {
+        font-size: 28px;
+        padding-top: 41px;
+    }
+    .header_box_title>h1{
+        text-align: start;
+        background-color: none;
+    }
+    .modal_form{
+        width: 330px;
+    }
+    .modal_img_2{
+        margin-right: 35px;
+    }
+    .modal_application_input{
+        width: 220px;
+    }
+    .buttons {
+        display: none;
+    }
+    .text {
+        display: none;
+     }
+     .mobil {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
